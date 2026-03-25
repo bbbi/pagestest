@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSX | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="stars"></canvas>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+    </button>
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="NSX">
+                <span class="letter">N</span><span class="letter">S</span><span class="letter">X</span>
+            </h1>
+            <p class="tagline">Agentic Engineer | Username Availability & API Automation</p>
+        </header>
+
+        <main>
+            <section class="about">
+                <p>
+                    Agentic engineer crafting autonomous scripts and intelligent automation.<br>
+                    I specialize in creating efficient scripts that check username availability 
+                    across multiple platforms via APIs.<br> Mechanical Engineering student during the day, Programmer at night.
+                </p>
+            </section>
+
+            <section class="github-links">
+                <a href="https://github.com/honda-nsx" target="_blank" class="github-card">
+                    <span class="icon">🔧</span>
+                    <span>@honda-nsx</span>
+                </a>
+                <a href="https://github.com/PopeLeoXIV" target="_blank" class="github-card">
+                    <span class="icon">👑</span>
+                    <span>@PopeLeoXIV</span>
+                </a>
+                <a href="https://namemc.com/profile/meltwater" target="_blank" class="github-card">
+                    <span class="icon">⛏️</span>
+                    <span>@meltwater</span>
+                </a>
+            </section>
+
+            <section class="terminal-section">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="terminal-btn close"></span>
+                        <span class="terminal-btn minimize"></span>
+                        <span class="terminal-btn maximize"></span>
+                        <span class="terminal-title">terminal@nsx:~</span>
+                    </div>
+                    <div class="terminal-body" id="terminal">
+                        <div class="terminal-line">
+                            <span class="prompt">nsx@portfolio:~$</span>
+                            <span class="command">whoami</span>
+                        </div>
+                        <div class="terminal-output">NSX - Mech Eng Student & Username Availability Script Developer</div>
+                        <div class="terminal-line">
+                            <span class="prompt">nsx@portfolio:~$</span>
+                            <span class="command">cat skills.txt</span>
+                        </div>
+                        <div class="terminal-output">
+                            • API Integration<br>
+                            • Python Scripting<br>
+                            • Username Enumeration<br>
+                            • Automation
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">nsx@portfolio:~$</span>
+                            <span class="command">check-username --help</span>
+                        </div>
+                        <div class="terminal-output">
+                            Usage: check-username [OPTIONS] USERNAME<br>
+                            Check if a username is available across platforms.<br>
+                            <br>
+                            Options:<br>
+                              --github    Check GitHub availability<br>
+                              --twitter   Check Twitter availability<br>
+                              --all       Check all platforms<br>
+                              --json      Output as JSON
+                        </div>
+                        <div class="terminal-line active">
+                            <span class="prompt">nsx@portfolio:~$</span>
+                            <span class="cursor"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 NSX. Built with code and caffeine.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
